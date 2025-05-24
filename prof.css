@@ -1,0 +1,190 @@
+.dis{display: block!important;
+    
+}
+.opt:hover{color: #3498db;filter: brightness(1.5);text-decoration: underline;text-underline-offset: 0.25rem; }
+.navbar{z-index:1;background-color: #2C3E50 ;position:fixed;width:100%;top:0;right:0;transition: 1.5s;
+    filter: brightness(1.001);
+
+}
+
+p{font-size: 1.25rem;
+    margin: 1.25rem 0;
+    padding: 0.62rem;
+}
+.divbody{position:relative;top:5.5rem}
+
+img{border: #2C3E50 3px solid;
+    
+    width: 75%;
+    height: auto;
+}
+
+body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #d1c9c9;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .search-box {
+            margin: 20px 0;
+            position: relative;
+        }
+        
+        #searchInput {
+            width: 100%;
+            padding: 15px 20px;
+            border: 2px solid #ddd;
+            border-radius: 6px;
+            font-size: 16px;
+            transition: all 0.3s;
+            box-sizing: border-box;
+        }
+        
+        #searchInput:focus {
+            border-color: #3b6085;
+            outline: none;
+            box-shadow: 0 0 8px rgba(52, 152, 219, 0.3);
+        }
+        
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            font-size: 0.95em;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        
+        .data-table thead tr {
+            background-color: #3e8686;
+            color: white;
+            text-align: left;
+        }
+        
+        .data-table th,
+        .data-table td {
+            padding: 15px;
+            border: 1px solid #ddd;
+        }
+        
+        .data-table tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+        
+        .data-table tbody tr:nth-of-type(even) {
+            background-color: #f8f9fa;
+        }
+        
+        .data-table tbody tr:last-of-type {
+            border-bottom: 2px solid #3498db;
+        }
+        
+        .data-table tbody tr:hover {
+            background-color: #e9f7fe;
+            cursor: pointer;
+        }
+        
+        .no-results {
+            padding: 30px;
+            text-align: center;
+            color: #666;
+            font-style: italic;
+            background-color: #f8f9fa;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            margin-top: 20px;
+            font-size: 1.1em;
+        }
+        
+        .highlight {
+            background-color: #fffde7;
+            font-weight: bold;
+        }
+        a{color: white;
+            text-decoration: none;
+            margin: 1.25rem 0;
+            padding: 0.625rem;
+            font-size: 1rem;
+        }
+        h1{
+            margin: 0;
+            padding: 0;
+        }
+        ul{margin: 0;padding: 0;
+            list-style: none;
+        }
+        .menu{color: #ffffff;
+            font-weight: 800;
+            font-size: 2rem;
+            display: none;
+            height: max-content;
+            width: max-content;
+            position: fixed;
+            top: -0.625rem;
+            right: 1.5rem;
+        }
+        .ul01{
+            padding:0 1.5rem ;
+        }
+        .li02{margin: 1.25rem 0;padding:0.625rem;}
+        
+        @media screen and (max-width: 768px) {
+            .conexion{display: block!important;}
+            img{
+                width: 88%;
+                 height: auto;
+        }
+            .dispare{
+                display: none;
+            }
+
+            .tab1 td{display: block;}
+
+            .ul01{flex-direction: column;}
+            .ul02{flex-direction: column;
+                align-items: center;
+            }
+            .li01{display: none;
+                margin-bottom:2rem;
+            }
+            .menu{display: block;}
+            .li02{margin:0.1rem ;padding:0.3125rem
+            }
+            
+            
+            .container {
+                padding: 10px;
+            }
+            
+            .data-table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+            
+            #searchInput {
+                padding: 12px 15px;
+            }
+            
+            .data-table th,
+            .data-table td {
+                padding: 10px;
+            }
+        }
