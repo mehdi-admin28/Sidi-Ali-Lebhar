@@ -1,7 +1,9 @@
 .dis{display: block!important;
     
 }
-.opt:hover{color: #3498db;filter: brightness(1.5);text-decoration: underline;text-underline-offset: 0.25rem; }
+.opt{font-size: 1.4rem;width: 100%;}
+
+.opt:hover{color: #3498db;filter: brightness(1.5);text-decoration: underline;text-underline-offset: 0.25rem;  }
 .navbar{z-index:1;background-color: #2C3E50 ;position:fixed;width:100%;top:0;right:0;transition: 1.5s;
     filter: brightness(1.001);
 
@@ -9,7 +11,7 @@
 
 p{font-size: 1.25rem;
     margin: 1.25rem 0;
-    padding: 0.62rem;
+    padding: 0.625rem;
 }
 .divbody{position:relative;top:5.5rem}
 
@@ -22,7 +24,7 @@ img{border: #2C3E50 3px solid;
 body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            margin: 0;
+            margin: 1rem;
             padding: 20px;
             background-color: #d1c9c9;
             color: #333;
