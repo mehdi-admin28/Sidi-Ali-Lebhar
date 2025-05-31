@@ -190,9 +190,7 @@ div change :rgb(163, 163, 163);
                 display: none;
             }
             
-            .navbar{
-                filter: brightness(1.5);
-            }
+            
             .nav-links {
                 position: fixed;
                 top: 0;
