@@ -1,278 +1,491 @@
 <!DOCTYPE html>
-<html lang="f21">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./prof.css">
+        <!--font en arab-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans+Arabic:wght@100..800&display=swap" rel="stylesheet">
+        <!-- fr -->
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+        <title>Lycée Sidi Ali Lebhar</title>
+    <link rel="stylesheet" href="./sidi.css">
 </head>
-<style>
-    body{padding:0;}
-</style>
+
+
+
 
 <body>
-     <nav  style="background-color: transparent;" class="navbar navbar1" >
-        <ul class="ul01" style="display: flex;justify-content:space-between;align-items:center;">
-            <li style="margin: 1.25rem 0;padding:0.625rem;">
-                <h1 class="h101" style="color:white;font-size:1.7rem;">[ Sidi Ali Lebhar ]</h1>
-            </li>
-            <li class="li01">
-                <ul class="ul02" style="display: flex;justify-content:space-between;">
-                    <li class="li02"><a class="opt"  href="./index.html">Acueille</a></li>
-                    <li class="li02"><a class="opt"  href="./prof.html">Professeurs</a></li>
-                    <li class="li02"><a class="opt"  href="#">actualités</a></li>
-                    <li class="li02"><a class="opt"   href="#">Option</a></li>
-                </ul>
-            </li>
-        </ul> 
-         
+    <nav class="navbar">
+        <div class="logo">Sidi Ali Lebhar</div>
+        
+        <!-- Liens navigation -->
+        <div class="nav-links" id="navLinks">
+            <a href="./index.html">Accueil</a>
+            <a href="./actualite.html">Actualités</a>
+            <a href="#prof">professeurs</a>
+            <a href="#contact">Contact</a>
+            <button class="dark-mode-toggle" id="darkModeToggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+        
+        <!-- Menu Burger -->
+        <div class="burger-menu" id="burgerMenu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
     </nav>
-<a href="#"  style="z-index: 1;" class="menu">☰</a>
+<!--span body----------------------------->
+    <span class="spanbody">
 
-
-
-<div class="dispare" style="transition:1s;margin:0;padding:0 5rem;position:fixed;height:max-content;width:max-content;z-index:1;  top: 40%;left: 50%;transform: translate(-50%, -50%);">
-            <h6 style="color: white;font-size:3rem;text-align:center;font-weight:800;margin:5rem;">Bienvenue Sur le Site Du Lycée <br>" اسعد احمد و بشير "</h6>
-            <div class="conextion" style="background-color:transparent; padding:4rem 2rem;left:50%;top:110%;position:fixed; z-index:1;transform:translate(-50%,-50%);">
-  <div style="display:flex; justify-content:center;margin-top:-5rem; flex-wrap:wrap;">
-    
-    <!-- Bouton Connexion -->
-    <a href="#connexion" 
-       style="margin:0 0.21rem;
-              padding:0.75rem 1.875rem;
-              background-color:transparent;
-              color:white;
-              text-decoration:none;
-              border-radius:50px;
-              border:5px solid white;
-              font-weight:bold;
-              font-size:1rem;
-              font-family:Arial, sans-serif;
-              letter-spacing:1px;
-              transition:all 0.3s ease;"
-       onmouseover="this.style.backgroundColor='rgba(255,255,255,0.1)'"
-       onmouseout="this.style.backgroundColor='transparent'">
-      CONNEXION
-    </a>
-    
-    <!-- Bouton Inscription -->
-    <a href="#inscription" 
-       style="margin:0 0.21rem ;
-              padding:0.75rem 1.875rem;
-              background-color:transparent;
-              color:white;
-              text-decoration:none;
-              border-radius:50px;
-              border:5px solid white;
-              font-weight:bold;
-              font-size:1rem;
-              font-family:Arial, sans-serif;
-              letter-spacing:1px;
-              transition:all 0.3s ease;"
-       onmouseover="this.style.backgroundColor='rgba(255,255,255,0.1)'"
-       onmouseout="this.style.backgroundColor='transparent'">
-      INSCRIPTION
-    </a>
-    
-  </div>
-</div>
-</div>
-
-
-
-
-
-
-
-<div style="position:relative;background-color:transparent;height:50rem;filter:brightness(1.15);width:100%;">
-   <img style="filter:brightness(0.49);width:100%; transform:scale(1);" src="./fondBody.png" alt=""> 
-   <div style="border-radius:1rem;box-shadow:4px 4px 8px rgba(0,0,0,0.9);background-color:azure;margin:2rem;">
-    <h2 style="text-align:center;font-size:2rem;">Bienvenue Sur le Site Du Lycée <br>" اسعد احمد و بشير "</h2>
-    <p style="text-align: center;">Bienvenue sur le site du lycée. Ici, vous pouvez suivre les actualités, découvrir les projets de nos élèves et <br> trouver toutes les informations utiles sur l’établissement.</p>
-    <p style="text-align: center;">مرحبًا بكم في موقع الثانوية. يمكنكم هنا متابعة الأخبار، واكتشاف مشاريع تلاميذنا، والعثور على كل المعلومات المفيدة<br> حول المؤسسة </p>
-</div>
-
-    
-
-<!-- Section Calculateur de moyenne -->
-<section id="calculateur" style="padding:4rem 2rem; max-width:1200px; margin:0 auto; opacity:0; transform:translateY(30px); transition:opacity 1s, transform 1s;">
-    <h2 style="color:#2C3E50; font-size:2rem; text-align:center; margin-bottom:2rem;">CALCULATRICE DE MOYENNE<br>"حساب المعدل"</h2>
-    
-    <div style="display:flex; justify-content:center; gap:2rem; flex-wrap:wrap;">
-        <!-- Bouton 1ère année -->
-        <a href="https://eddirasa.com/ens-sec/1as/average/" 
-           style="display:inline-block; 
-                  padding:1.5rem 3rem; 
-                  background-color:#3498db; 
-                  color:white; 
-                  text-decoration:none; 
-                  border-radius:8px; 
-                  font-weight:bold;
-                  font-size:1.2rem;
-                  box-shadow:0 4px 8px rgba(0,0,0,0.1);
-                  transition:transform 0.3s;"
-           onmouseover="this.style.transform='translateY(-5px)'"
-           onmouseout="this.style.transform='translateY(0)'">
-            1ère année
-        </a>
-        
-        <!-- Bouton 2ème année -->
-        <a href="https://eddirasa.com/ens-sec/2as/" 
-           style="display:inline-block; 
-                  padding:1.5rem 3rem; 
-                  background-color:#e74c3c; 
-                  color:white; 
-                  text-decoration:none; 
-                  border-radius:8px; 
-                  font-weight:bold;
-                  font-size:1.2rem;
-                  box-shadow:0 4px 8px rgba(0,0,0,0.1);
-                  transition:transform 0.3s;"
-           onmouseover="this.style.transform='translateY(-5px)'"
-           onmouseout="this.style.transform='translateY(0)'">
-            2ème année
-        </a>
-        
-        <!-- Bouton 3ème année -->
-        <a href="https://eddirasa.com/ens-sec/3as/" 
-           style="display:inline-block; 
-                  padding:1.5rem 3rem; 
-                  background-color:#2ecc71; 
-                  color:white; 
-                  text-decoration:none; 
-                  border-radius:8px; 
-                  font-weight:bold;
-                  font-size:1.2rem;
-                  box-shadow:0 4px 8px rgba(0,0,0,0.1);
-                  transition:transform 0.3s;"
-           onmouseover="this.style.transform='translateY(-5px)'"
-           onmouseout="this.style.transform='translateY(0)'">
-            3ème année
-        </a>
-    </div>
-    
-    <p style="text-align:center; margin-top:2rem; font-style:italic;">
-        Ces boutons vous redirigeront vers un site pour le calcul des moyennes
-    </p>
-</section>
-
-<!-- Section Amélioration continue -->
-<section id="amelioration" style="background-color:#2C3E50; color:white; padding:4rem 2rem; text-align:center; opacity:0; transform:translateY(30px); transition:opacity 1s, transform 1s;">
-    <h2 style="font-size:2rem; margin-bottom:1.5rem;">UN SITE EN CONSTANTE AMÉLIORATION<br>"موقع في تطور مستمر"</h2>
-    <div style="max-width:800px; margin:0 auto;">
-        <p style="margin-bottom:1.5rem; line-height:1.6;">
-            Notre site évolue régulièrement pour mieux répondre à vos besoins. Nous travaillons actuellement sur :
-        </p>
-        <ul style="text-align:left; display:inline-block; margin-bottom:2rem;">
-            <li style="margin-bottom:0.5rem;">Une version mobile améliorée</li>
-            <li style="margin-bottom:0.5rem;">Un espace personnel pour chaque élève</li>
-            <li style="margin-bottom:0.5rem;">Des outils pédagogiques supplémentaires</li>
-        </ul>
-        <p style="font-style:italic;">
-            Revenez régulièrement pour découvrir les nouvelles fonctionnalités !
-        </p>
-    </div>
-</section>
-
-<!-- Formulaire de contact -->
-<section id="contact" style="padding:4rem 2rem; max-width:800px; margin:0 auto; opacity:0; transform:translateY(30px); transition:opacity 1s, transform 1s;">
-    <h2 style="color:#2C3E50; font-size:2rem; text-align:center; margin-bottom:2rem;">NOUS CONTACTER <br>" اتصلوا بنا "</h2>
-    
-    <form style="background-color:white; padding:2rem; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.1);">
-        <div style="margin-bottom:1.5rem;">
-            <label style="display:block; margin-bottom:0.5rem; font-weight:bold;">Votre nom</label>
-            <input type="text" style="width:100%; padding:0.8rem; border:1px solid #979797; border-radius:4px; font-size:1rem;">
+        <div><img class="img01" src="./fondBody001.jpg" alt=""></div>
+        <div class="dispare">
+            <h1 style="color:rgb(255, 255, 255);font-family:'Courier New', Courier, monospace" class="scroll-fade-in h01" >Bienvenue Sur le Site Du Lycée <br><span style="font-family:'Playpen Sans Arabic', cursive;">اسعد احمد و بشير</span></h1>
+            
+                
+               
         </div>
-        
-        <div style="margin-bottom:1.5rem;">
-            <label style="display:block; margin-bottom:0.5rem; font-weight:bold;">Votre email</label>
-            <input type="email" style="width:100%; padding:0.8rem; border:1px solid #979797; border-radius:4px; font-size:1rem;">
-        </div>
-        
-        <div style="margin-bottom:1.5rem;">
-            <label style="display:block; margin-bottom:0.5rem; font-weight:bold;">Sujet</label>
-            <select style="width:100%; padding:0.8rem; border:1px solid #979797; border-radius:4px; font-size:1rem;">
-                <option>Question générale</option>
-                <option>Problème technique</option>
-                <option>Suggestion d'amélioration</option>
-            </select>
-        </div>
-        
-        <div style="margin-bottom:1.5rem;">
-            <label style="display:block; margin-bottom:0.5rem; font-weight:bold;">Votre message</label>
-            <textarea style="width:100%; padding:0.8rem; border:1px solid #979797; border-radius:4px; font-size:1rem; min-height:150px;"></textarea>
-        </div>
-        
-        <button type="submit" 
-                style="background-color:#2C3E50; 
-                       color:white; 
-                       border:none; 
-                       padding:1rem 2rem; 
-                       font-size:1rem; 
-                       border-radius:4px; 
-                       cursor:pointer;
-                       transition:background-color 0.3s;"
-                onmouseover="this.style.backgroundColor='#1a2634'"
-                onmouseout="this.style.backgroundColor='#2C3E50'">
-            Envoyer le message
-        </button>
-    </form>
-</section>
 
-<!-- Footer -->
-<footer style="background-color:#1a2634; color:white; padding:3rem 2rem; text-align:center; margin-top:4rem;">
-    <div style="max-width:1200px; margin:0 auto;">
-        <div style="display:flex; justify-content:center; gap:3rem; flex-wrap:wrap; margin-bottom:2rem;">
-            <div style="text-align:left;">
-                <h3 style="font-size:1.2rem; margin-bottom:1rem;">Informations</h3>
-                <p>Lycée "اسعداحمد و بشير"</p>
-                <p>Sidi Ali Lebhar</p>
-                <p>06000 Bejaia</p>
+    <div class="div01">
+        <section class="presentation">
+    <div class="presentation-content">
+        <h2 class="section-title change scroll-fade-in" >Lycée Sidi Ali Lebhar</h2>
+        <h3 class="section-subtitle change scroll-fade-in">Établissement public d'excellence à Béjaïa</h3>
+        
+        <div class="about-grid change divchange scroll-fade-in">
+            <div class="about-card">
+                <i class="fas fa-calendar-alt"></i>
+                <h4>Planning</h4>
+                <p>Consultez les emplois du temps et dates de compositions</p>
+                <p style="font-family:'Playpen Sans Arabic', cursive;">هنا تجدون جدول الاختبارات</p>
             </div>
             
-            <div style="text-align:left;">
-                <h3 style="font-size:1.2rem; margin-bottom:1rem;">Liens utiles</h3>
-                <p><a href="#calculateur" style="color:white; text-decoration:none;">Calculateur de moyenne</a></p>
-                <p><a href="#contact" style="color:white; text-decoration:none;">Contact</a></p>
+            <div class="about-card">
+                <i class="fas fa-users"></i>
+                <h4>Équipe Pédagogique</h4>
+                <p>Découvrez notre équipe enseignante dévouée</p>
+                <p style="font-family:'Playpen Sans Arabic', cursive;">اكتشفوا مواقيت استقبال الاساتدة</p>
             </div>
             
-            <div style="text-align:left;">
-                <h3 style="font-size:1.2rem; margin-bottom:1rem;">Légal</h3>
-                <p><a href="#" style="color:white; text-decoration:none;">Mentions légales</a></p>
-                <p><a href="#" style="color:white; text-decoration:none;">" Permis "</a></p>
+            <div class="about-card ">
+                <i class="fas fa-trophy"></i>
+                <h4>Réalisations</h4>
+                <p>Les projets et succès de nos élèves</p>
+                <p style="font-family:'Playpen Sans Arabic', cursive;">مشاريع و تفوق تلاميدنا</p>
             </div>
         </div>
         
-        <hr style="border:none; height:1px; background-color:rgba(255,255,255,0.2); margin:2rem 0;">
-        
-        <p>© 2025 - Site réalisé par l'équipe du lycée</p>
-        <p style="font-style:italic; margin-top:0.5rem;">Ce site a été créé en 2025 et s'améliore continuellement</p>
+        <div class="history-section scroll-fade-in">
+            <h4>Notre Histoire</h4>
+            <p>Fondé en 2013, le Lycée Sidi Ali Lebhar (officiellement Lycée Chouhada Isaad Ahmed et Bachir) est un établissement public moderne situé à Béjaïa, Algérie. Nous accueillons chaque année des centaines d'élèves avec des infrastructures de qualité incluant une demi-pension de 300 rations.</p>
+        </div>
     </div>
-</footer>
-
-<script>
-    // Animation au scroll
-    function animateOnScroll() {
-        const elements = document.querySelectorAll('section');
-        const windowHeight = window.innerHeight;
-        
-        elements.forEach(element => {
-            const elementPosition = element.getBoundingClientRect().top;
-            const elementVisible = 150;
-            
-            if (elementPosition < windowHeight - elementVisible) {
-                element.style.opacity = "1";
-                element.style.transform = "translateY(0)";
-            }
-        });
-    }
+</section>
+    </div>
+<!-------------------------------la galerie------------------------------->
+<section style="background-color: transparent;" class="gallery-section scroll-fade-in">
+    <h2 class="gallery-title change">Notre Lycée / <span style="font-family:'Playpen Sans Arabic', cursive;">ثانويتنا</span></h2>
+    <div class="gallery-grid">
+        <img src="./img_sidi/photo1.png" alt="Vue du lycée Sidi Ali Lebhar">
+        <img src="./img_sidi/photo2.jpg" alt="Vue du lycée Sidi Ali Lebhar">
+        <img src="./img_sidi/photo3.jpg" alt="Vue du lycée Sidi Ali Lebhar">
+        <img src="./img_sidi/photo4.jpg" alt="Vue du lycée Sidi Ali Lebhar">
+        <img src="./img_sidi/photo5.jpg" alt="Vue du lycée Sidi Ali Lebhar">
+        <img src="./img_sidi/photo6.jpg" alt="Vue du lycée Sidi Ali Lebhar">
+        <img src="./img_sidi/photo7.jpg" alt="Vue du lycée Sidi Ali Lebhar">
+        <img src="./img_sidi/photo8.jpg" alt="Vue du lycée Sidi Ali Lebhar">
+    </div>
+</section>
+<!--------------------------ici le planing et la recherche------------------>
+<section style="background-color: transparent;" class="teachers-section divchange scroll-fade-in" id="prof">
+    <h2 class="section-title02 change">Heures de récéption /<span style="font-family:'Playpen Sans Arabic', cursive;">الهيئة التدريسية</span></h2>
     
-    // Démarrer les animations au chargement
-    window.addEventListener('load', animateOnScroll);
-    // Et au scroll
-    window.addEventListener('scroll', animateOnScroll);
-</script>
+    <div style="border-radius: 50%;" class="search-container">
+        <i class="fas fa-search"></i>
+        <input type="text" id="teacherSearch" placeholder="Rechercher un professeur... / ابحث عن أستاذ...">
+    </div>
+    
+    <div class="table-container">
+        <table id="teachersTable">
+            <thead>
+                <tr>
+                    <th>Nom & Prénom</th>
+                    <th>Matière</th>
+                    <th>Jour de réception</th>
+                    <th>Heure</th>
+                </tr>
+            </thead>
+            <tbody style="color: black;">
+<tr>
+    <td>Mr. Tani Saleh</td>
+    <td>Mathématiques</td>
+    <td>Lundi</td>
+    <td>09h - 11h</td>
+</tr>
+<tr>
+    <td>Mme. Djelouli Njima</td>
+    <td>Mathématiques</td>
+    <td>Lundi</td>
+    <td>09h - 11h</td>
+</tr>
+<tr>
+    <td>Mme. Ahmime Yamina</td>
+    <td>Mathématiques</td>
+    <td>Lundi</td>
+    <td>09h - 11h</td>
+</tr>
+<tr>
+    <td>Mme. Aboud Hayat</td>
+    <td>Physique</td>
+    <td>Lundi</td>
+    <td>09h - 11h</td>
+</tr>
+<tr>
+    <td>Mr. Berghel Omar</td>
+    <td>Physique</td>
+    <td>Lundi</td>
+    <td>09h - 11h</td>
+</tr>
+<tr>
+    <td>Mr. Mseroua Abdelmalek</td>
+    <td>Physique</td>
+    <td>Lundi</td>
+    <td>09h - 11h</td>
+</tr>
+<tr>
+    <td>Mr. Zbicha Ahmed</td>
+    <td>Physique</td>
+    <td>Lundi</td>
+    <td>09h - 11h</td>
+</tr>
+<tr>
+    <td>Mr. Mikhaldi Imad</td>
+    <td>Science</td>
+    <td>Lundi</td>
+    <td>09h - 11h</td>
+</tr>
+<tr>
+    <td>Mme. Ziani Sabrina</td>
+    <td>Science</td>
+    <td>Lundi</td>
+    <td>09h - 11h</td>
+</tr>
+<tr>
+    <td>Mme. Yousfi Fadia</td>
+    <td>Science</td>
+    <td>Lundi</td>
+    <td>09h - 11h</td>
+</tr>
+<tr>
+    <td>Mme. Ouali Katia</td>
+    <td>Economie</td>
+    <td>Lundi</td>
+    <td>09h - 11h</td>
+</tr>
+<tr>
+    <td>Mme. Arab Kahina</td>
+    <td>Economie</td>
+    <td>Lundi</td>
+    <td>09h - 11h</td>
+</tr>
+<tr>
+    <td>Mme. Mekhlouf Farah</td>
+    <td>Arabe</td>
+    <td>Lundi</td>
+    <td>09h - 11h</td>
+</tr>
+<tr>
+    <td>Mr. Mourad Jamel</td>
+    <td>Arabe</td>
+    <td>Lundi</td>
+    <td>09h - 11h</td>
+</tr>
+<tr>
+    <td>Mme. Mhenna Zakia</td>
+    <td>Arabe</td>
+    <td>Lundi</td>
+    <td>09h - 11h</td>
+</tr>
+<tr>
+    <td>Mme. Blimane Wahida</td>
+    <td>Arabe</td>
+    <td>Lundi</td>
+    <td>09h - 11h</td>
+</tr>
+<tr>
+    <td>Mme. Goumeziane Wafa</td>
+    <td>Arabe</td>
+    <td>Lundi</td>
+    <td>09h - 11h</td>
+</tr>
+<tr>
+    <td>Mme. Heddadi Narimane</td>
+    <td>Français</td>
+    <td>Lundi</td>
+    <td>09h - 11h</td>
+</tr>
+<tr>
+    <td>Mme. Odak Nassima</td>
+    <td>Français</td>
+    <td>Lundi</td>
+    <td>09h - 11h</td>
+</tr>
+<tr>
+    <td>Mme. Saou Lamia</td>
+    <td>Français</td>
+    <td>Lundi</td>
+    <td>09h - 11h</td>
+</tr>
+<tr>
+    <td>Mr. Mezhoud Hamza</td>
+    <td>Français</td>
+    <td>Lundi</td>
+    <td>09h - 11h</td>
+</tr>
+<tr>
+    <td>Mme. Halfoun Farida</td>
+    <td>Anglais</td>
+    <td>Lundi</td>
+    <td>09h - 11h</td>
+</tr>
+<tr>
+    <td>Mme. Dali Dalila</td>
+    <td>Anglais</td>
+    <td>Lundi</td>
+    <td>09h - 11h</td>
+</tr>
+<tr>
+    <td>Mme. Bekouche Laila</td>
+    <td>Anglais</td>
+    <td>Lundi</td>
+    <td>09h - 11h</td>
+</tr>
+<tr>
+    <td>Mme. Mellali Siham</td>
+    <td>Anglais</td>
+    <td>Lundi</td>
+    <td>09h - 11h</td>
+</tr>
+<tr>
+    <td>Mme. Zerrari Zakia</td>
+    <td>Tamazight</td>
+    <td>Lundi</td>
+    <td>09h - 11h</td>
+</tr>
+<tr>
+    <td>Mme. Ameziane Sabrina</td>
+    <td>Tamazight</td>
+    <td>Lundi</td>
+    <td>09h - 11h</td>
+</tr>
+<tr>
+    <td>Mme. Beqqa Dalila</td>
+    <td>Tamazight</td>
+    <td>Lundi</td>
+    <td>09h - 11h</td>
+</tr>
+<tr>
+    <td>Mme. Saidi Kahina</td>
+    <td>Tamazight</td>
+    <td>Lundi</td>
+    <td>09h - 11h</td>
+</tr>
+<tr>
+    <td>Mr. Laariche Abdelaziz</td>
+    <td>Espagnol</td>
+    <td>Lundi</td>
+    <td>09h - 11h</td>
+</tr>
+<tr>
+    <td>Mme. Khalfi Leila</td>
+    <td>Philosophie</td>
+    <td>Lundi</td>
+    <td>09h - 11h</td>
+</tr>
+<tr>
+    <td>Mr. Goujil Yahya</td>
+    <td>Philosophie</td>
+    <td>Lundi</td>
+    <td>09h - 11h</td>
+</tr>
+<tr>
+    <td>Mme. Nasri Hajira</td>
+    <td>His/Géo</td>
+    <td>Lundi</td>
+    <td>09h - 11h</td>
+</tr>
+<tr>
+    <td>Mme. Bensafia Samia</td>
+    <td>His/Géo</td>
+    <td>Lundi</td>
+    <td>09h - 11h</td>
+</tr>
+<tr>
+    <td>Mme. Rbiha Firouz</td>
+    <td>His/Géo</td>
+    <td>Lundi</td>
+    <td>09h - 11h</td>
+</tr>
+<tr>
+    <td>Mr. Amouche Azeddine</td>
+    <td>His/Géo</td>
+    <td>Lundi</td>
+    <td>09h - 11h</td>
+</tr>
+<tr>
+    <td>Mme. Fermas Fatima</td>
+    <td>Science Islamique</td>
+    <td>Lundi</td>
+    <td>09h - 11h</td>
+</tr>
+<tr>
+    <td>Mme. Ouari Sakina</td>
+    <td>Génie Éléctrique</td>
+    <td>Lundi</td>
+    <td>09h - 11h</td>
+</tr>
+<tr>
+    <td>Mr. Mlihi Said</td>
+    <td>Génie Éléctrique</td>
+    <td>Lundi</td>
+    <td>09h - 11h</td>
+</tr>
+<tr>
+    <td>Mme. Gouiri Nadia</td>
+    <td>Informatique</td>
+    <td>Lundi</td>
+    <td>09h - 11h</td>
+</tr>
+<tr>
+    <td>Mr. Daoud Soufiane</td>
+    <td>EPS</td>
+    <td>Lundi</td>
+    <td>09h - 11h</td>
+</tr>
+<tr>
+    <td>Mme. Chabou Malika</td>
+    <td>EPS</td>
+    <td>Lundi</td>
+    <td>09h - 11h</td>
+</tr>
+<tr>
+    <td>Mr. Berchouche Jamel</td>
+    <td>EPS</td>
+    <td>Lundi</td>
+    <td>09h - 11h</td>
+</tr>
 
-    <script src="./prof.js"></script>
+            </tbody>
+        </table>
+    </div>
+</section>
+<!--section contact moi------------------------------------------------------>
+<section style="background-color: transparent;" class="contact-section " id="contact">
+    <h2 class="section-title change scroll-fade-in">Contactez-nous / <span style="font-family:'Playpen Sans Arabic', cursive;">اتصل بنا</span></h2>
+    <p class="section-subtitle change scroll-fade-in">Nous serions ravis d'avoir de vos nouvelles. Posez vos questions ou planifiez une visite. <br>يسرنا أن نسمع منكم. تواصلوا معنا لأي استفسار أو لزيارة المعهد</p>
+    
+    <div class="contact-container scroll-fade-in divchange">
+        <div class="contact-form">
+            <h3>Envoyez-nous un message / أرسل لنا رسالة</h3>
+            <form class="message">
+                <div class="form-group">
+                    <label for="fullname">Nom complet / الاسم الكامل</label>
+                    <input required type="text" id="fullname" placeholder="Entrez votre nom complet / أدخل اسمك الكامل">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Adresse email / البريد الإلكتروني</label>
+                    <input required type="email" id="email" placeholder="Entrez votre email / أدخل بريدك الإلكتروني">
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject">Sujet / الموضوع</label>
+                    <input required type="text" id="subject" placeholder="Sujet du message / موضوع الرسالة">
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message / الرسالة</label>
+                    <textarea required id="message" placeholder="Écrivez votre message ici... / اكتب رسالتك هنا" rows="5"></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Envoyer le message / إرسال الرسالة</button>
+            </form>
+        </div>
+        
+        <div class="contact-info scroll-fade-in">
+            <h3>Informations de contact / معلومات الاتصال</h3>
+            
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Sidi Ali Lebhar, Béjaïa 06000, Algérie<br>سيدي علي لبحر، بجاية 06000، الجزائر</p>
+            </div>
+            
+            <div class="info-item">
+                <i class="fas fa-phone"></i>
+                <p>+213 3(mazal chwiya)<br>+213 (mazal daghen)</p>
+            </div>
+            
+            <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <p>wayi_de_mital@gmail.com<br>wayi_daghen@gmail.com</p>
+            </div>
+            
+            <div class="info-item">
+                <i class="fas fa-clock"></i>
+                <p><strong>Heures d'ouverture :</strong> Dimanche - Jeudi: 8h00 - 17h00<br>
+                <strong>أوقات الدوام:</strong> الأحد - الخميس: 8 صباحاً - 5 مساءً</p>
+            </div>
+            
+            <div class="social-links">
+                <h4>Suivez-nous / تابعونا</h4>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+</span>
+<!--un boutons pour remonter vers le haut quand en scroll vers le bah----------->
+<button id="backToTopBtn" class="back-to-top" aria-label="Retour en haut">
+    <i class="fas fa-arrow-up"></i>
+</button>
+<!-----------------pied de page----------------------------->
+
+
+    <footer class="scroll-fade-in">
+        <div class="footer-content">
+            <h3>Lycée Sidi Ali Lebhar<br>اسعد احمد و بشير</h3>
+            
+            <!-- Icônes réseaux sociaux -->
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+
+            <!--gps-->
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.934095789811!2d5.0672635999999995!3d36.724143999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12f2cd9f3569da01%3A0x8a7142a258268422!2sLyc%C3%A9e%20Sidi%20Ali%20lebhar!5e0!3m2!1sfr!2sdz!4v1748260699083!5m2!1sfr!2sdz";
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+
+            <p class="copyright">© 2025 Lycée Sidi Ali Lebhar. ممتلك الحقوق.</p>
+        </div>
+    </footer>
+</span>
+
+    <script src="./sidi1.js">
+    </script>
 </body>
 </html>
