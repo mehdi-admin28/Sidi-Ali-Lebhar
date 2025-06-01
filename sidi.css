@@ -97,7 +97,8 @@ div change :rgb(163, 163, 163);
             font-size: 1.8rem;
             font-weight: bold;
             cursor: pointer;
-            z-index: 1001; 
+            z-index: 1001;
+            margin-left: 1rem;
         }
 
         /* opt menu*/
@@ -173,13 +174,14 @@ div change :rgb(163, 163, 163);
             margin:5rem;
         }
         
-
+.spanbody{margin: 0;padding-top: 7%;}
         /*masque les opt et afficher le burger*/
         @media (max-width: 768px) {
             .img01{height: 250px;}
             body{
                 height: 200vh;
             }
+            .spanbody{margin: 0;padding-top: 20%;}
             .h01{
                 font-size:1.8rem;
                 
@@ -1007,4 +1009,393 @@ p.pdark{color: white;}
 }
 
 
-/*-----------------------------*/
+/*__________________________________________________PROFIL_________________________________*/
+
+.message-section {
+  padding: 6rem 5%;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.message-card {
+  background: white;
+  max-width: 600px;
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  overflow: hidden;
+  padding: 2rem;
+  font-family: 'Roboto', sans-serif;
+}
+.message-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.teacher-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #ccc;
+}
+.teacher-name {
+  font-size: 1.2rem;
+  font-family: 'Dancing Script', cursive;
+  color: #2C3E50;
+}
+.teacher-subject {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.message-box {
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.message-bubble {
+  padding: 0.8rem 1.2rem;
+  border-radius: 12px;
+  max-width: 80%;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+.message-bubble.prof {
+  background: #2C3E50;
+  color: white;
+  align-self: flex-start;
+}
+.message-bubble.student {
+  background: #ecf0f1;
+  color: #2C3E50;
+  align-self: flex-end;
+}
+
+.message-input {
+  display: flex;
+  border-top: 1px solid #ddd;
+  padding-top: 1rem;
+  gap: 0.5rem;
+}
+.message-input input {
+  flex: 1;
+  padding: 0.8rem 1rem;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+.message-input button {
+  background: #2C3E50;
+  border: none;
+  color: white;
+  padding: 0.8rem 1.2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.message-input button:hover {
+  background: #1a252f;
+}
+
+@media (max-width: 600px) {
+  .message-card {
+    padding: 1.5rem 1rem;
+  }
+  .message-bubble {
+    font-size: 0.85rem;
+  }
+  .message-input input {
+    padding: 0.7rem 0.9rem;
+  }
+}
+/*___________________________________________________________________*/
+
+/* Section principale */
+.profile-section {
+  padding: 7% 5%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background: transparent;
+}
+
+/* Carte profil */
+.profile-card {
+  width: 100%;
+  max-width: 450px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+}
+
+/* Bannière */
+.profile-banner {
+  height: 120px;
+  background: linear-gradient(135deg, #2C3E50, #1a252f);
+}
+
+/* Contenu */
+.profile-content {
+  padding: 2rem 1.5rem 2.5rem;
+  text-align: center;
+  position: relative;
+  top: -60px;
+}
+.profile-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  background-color: #ccc;
+}
+.profile-name {
+  font-size: 1.8rem;
+  font-family: 'Dancing Script', cursive;
+  color: #2C3E50;
+  margin-bottom: 0.3rem;
+}
+.profile-role {
+  color: #777;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+.profile-details p {
+  margin: 0.4rem 0;
+  color: #2C3E50;
+  font-size: 0.95rem;
+}
+.profile-details i {
+  margin-right: 8px;
+  color: #2C3E50;
+}
+.profile-btn {
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.8rem;
+  border: none;
+  border-radius: 30px;
+  background: #2C3E50;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.profile-btn:hover {
+  background: #1a252f;
+  transform: translateY(-2px);
+}
+
+/* Moyennes */
+.grades-section {
+  padding: 2rem 1.5rem;
+  border-top: 1px dashed #ddd;
+}
+.grades-title {
+  font-size: 1.3rem;
+  color: #2C3E50;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+}
+.grades-table-container {
+  overflow-x: auto;
+}
+.grades-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.grades-table th, .grades-table td {
+  padding: 0.8rem 1rem;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+.grades-table th {
+  background: #2C3E50;
+  color: white;
+}
+.grades-table tr:hover {
+  background-color: #f5f5f5;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    .profile-section{padding-top: 20%;}
+  .profile-card {
+    margin: 0 1rem;
+  }
+  .profile-content {
+    padding: 1.5rem 1rem 2rem;
+  }
+  .profile-avatar {
+    width: 100px;
+    height: 100px;
+  }
+  .grades-table th, .grades-table td {
+    font-size: 0.9rem;
+    padding: 0.6rem 0.7rem;
+  }
+}
+/*------------------------------------ICON PROFIL---------------------------------*/
+.nav-profile-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #fff;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.nav-profile-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.nav-profile-icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 768px) {
+  .nav-profile-icon {
+    width: 32px;
+    height: 32px;
+  }
+}
+/*--------------------------rmplois du temps compo----------------------*/
+
+.exam-schedule-section {
+  padding: 6rem 5%;
+  background: #f8f9fa;
+  max-width: 900px;
+  margin: 3rem auto;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  background: white;
+  font-family: 'Roboto', sans-serif;
+}
+.exam-table-container {
+  overflow-x: auto;
+}
+.exam-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+}
+.exam-table th,
+.exam-table td {
+  border: 1px solid #ddd;
+  padding: 0.9rem 1rem;
+  text-align: center;
+  font-size: 1rem;
+}
+.exam-table th {
+  background: #2C3E50;
+  color: white;
+}
+.exam-table tr:nth-child(even) {
+  background: #f2f2f2;
+}
+@media (max-width: 768px) {
+  .exam-table th,
+  .exam-table td {
+    font-size: 0.85rem;
+    padding: 0.6rem;
+  }
+}
+/*-----------------------------LES JUSTIFICATION D ABSENCE----------------------*/
+.absence-justification-section {
+  padding: 6rem 5%;
+  background: #f8f9fa;
+  max-width: 700px;
+  margin: 3rem auto;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  font-family: 'Roboto', sans-serif;
+}
+.absence-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.form-group label {
+  font-weight: 500;
+  color: #2C3E50;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+.submit-absence-btn {
+  background: #2C3E50;
+  color: white;
+  padding: 0.9rem 1.7rem;
+  border: none;
+  border-radius: 30px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  align-self: flex-end;
+}
+.submit-absence-btn:hover {
+  background: #1a252f;
+}
+@media (max-width: 600px) {
+  .absence-justification-section {
+    padding: 4rem 1.5rem;
+  }
+}
+/*---------------------DIV EXPLICATION DANS PROFILE-----*/
+.intro-section {
+  background-color: #2C3E50;
+  color: white;
+  padding: 2.5rem;
+  border-radius: 12px;
+  max-width: 900px;
+  margin: 3rem auto;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  text-align: justify;
+}
+
+.intro-section .section-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.8rem;
+  color: white;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .intro-section {
+    padding: 1.5rem 1rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    border-radius: 8px;
+    margin: 2rem 1rem;
+    text-align: left;
+  }
+
+  .intro-section .section-title {
+    font-size: 1.5rem;
+  }
+}

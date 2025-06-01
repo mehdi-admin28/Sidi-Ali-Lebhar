@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--font en arab-->
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans+Arabic:wght@100..800&display=swap" rel="stylesheet">
+         <!-- fr -->
+         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+         <!-- Font Awesome -->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+         
+    <link rel="stylesheet" href="./sidi.css">
+    <title>Profil-Lycée</title>
+</head>
+<body>
+    <div class="dispare" style="display: none;"></div>
+    <nav class="navbar">
+        <div style="display: flex;">
+        <div  class="nav-profile-icon">
+           <a href="./profil.html"><img src="./img_sidi/profil-vide.jpg" alt=""></a>
+        </div>
+        <div class="logo">Sidi Ali Lebhar</div>
+        </div>
+        <!-- Liens navigation -->
+        <div class="nav-links" id="navLinks">
+            <a href="./index.html">Accueil</a>
+            <a href="./actualite.html">Actualités</a>
+            <a href="./index.html#prof">professeurs</a>
+            <a href="./index.html#contact">Contact</a>
+            <button class="dark-mode-toggle" id="darkModeToggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+        
+        <!-- Menu Burger -->
+        <div class="burger-menu" id="burgerMenu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+<!-- PETITE RONDELLE DE PROFIL POUR NAVBAR -->
+
+
+<span  class="spanbody">
+
+
+
+<!--___________________________________________________________________-->
+<!-- SECTION PROFIL AVEC MOYENNES -->
+<section class="profile-section scroll-fade-in">
+  <div class="profile-card">
+    <div class="profile-banner"></div>
+    <div class="profile-content">
+      <img src="./img_sidi/2.png" alt="Avatar" class="profile-avatar">
+      <h2 class="profile-name"><span style="font-family: 'Courier New', Courier, monospace;font-size:1.2rem;">( EXAMPLE )</span><br> Ahmed Nom</h2>
+      <p class="profile-role">Élève – Terminale Sciences</p>
+      <div class="profile-details">
+        <p><i class="fas fa-envelope"></i> ahmed.Nom@example.com</p>
+        <p><i class="fas fa-calendar-alt"></i> Né le 05/03/2007</p>
+        <p><i class="fas fa-map-marker-alt"></i> Béjaïa, Algérie</p>
+      </div>
+      <button class="profile-btn">Modifier le profil</button>
+    </div>
+
+    <div class="grades-section">
+      <h3 class="grades-title"><span style="font-family: 'Courier New', Courier, monospace;">Moyennes /</span>  <span style="font-family:'Playpen Sans Arabic', cursive;">المعدلات</span></h3>
+      <div class="grades-table-container">
+        <table class="grades-table">
+          <thead>
+            <tr>
+              <th>Matière</th>
+              <th>Moyenne</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="color: black;"><td>Mathématiques</td><td>15.5</td></tr>
+            <tr style="color: black;"><td>Physique</td><td>14.75</td></tr>
+            <tr style="color: black;"><td>SVT</td><td>16.25</td></tr>
+            <tr style="color: black;"><td>Français</td><td>13.5</td></tr>
+            <tr style="color: black;"><td>Anglais</td><td>14.25</td></tr>
+            <tr style="color: black;"><td>Philosophie</td><td>12.5</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+<!--explication-->
+<section class="intro-section scroll-fade-in">
+  <h2 class="section-title"><span style="font-family: 'Courier New', Courier, monospace;">Aperçu des Prochaines Fonctionnalités</span> </h2>
+  <p>
+    Ceci est un exemple de nos prochains projets : création de profils pour chaque élève et professeur, affichage des moyennes personnelles (accessibles uniquement à l'élève concerné), emploi du temps des compositions selon la classe, messagerie directe avec certains professeurs, et système de justification d'absences en ligne.
+  </p>
+</section>
+<!-- SECTION DISCUSSION AVEC PROFESSEUR -->
+<section class="message-section scroll-fade-in">
+  <h2 class="section-title change"><span style="font-family: 'Courier New', Courier, monospace;">Discussion Prof /</span> <span style="font-family:'Playpen Sans Arabic', cursive;">مراسلة الأستاذ</span> <br><span style="font-family: 'Courier New', Courier, monospace;font-size:1.2rem;">( EXAMPLE )</span></h2>
+  
+  <div class="message-card">
+    <div class="message-header">
+      <img src="./img_sidi/photo1.png" alt="Professeur" class="teacher-avatar">
+      <div>
+        <h3 class="teacher-name ">Mme. Aasma Blabla</h3>
+        <p class="teacher-subject">Mathématiques</p>
+      </div>
+    </div>
+    
+    <div class="message-box">
+      <div class="message-bubble prof">Bonjour, avez-vous une question sur le dernier devoir ?</div>
+      <div class="message-bubble student">Oui madame, je n’ai pas compris l’exercice 3.</div>
+    </div>
+    
+    <form class="message-input">
+      <input type="text" placeholder="Écrire un message..." required>
+      <button type="submit"><i class="fas fa-paper-plane"></i></button>
+    </form>
+  </div>
+</section>
+
+
+
+
+
+<!--_________________________________________________________-->
+
+<!-- SECTION JUSTIFICATION D'ABSENCE -->
+<section class="absence-justification-section scroll-fade-in">
+  <h2 class="section-title"><span style="font-family: 'Courier New', Courier, monospace;"> Justifier une Absence / </span><span style="font-family:'Playpen Sans Arabic', cursive;">تبرير غياب</span></h2>
+
+  <form class="absence-form" enctype="multipart/form-data">
+    <div class="form-group">
+      <label for="fullname">Nom complet</label>
+      <input type="text" id="" name="fullname" placeholder="Votre nom..." required>
+    </div>
+
+    <div class="form-group">
+      <label for="absence-date">Date d'absence</label>
+      <input type="date" id="absence-date" name="date" required>
+    </div>
+
+    <div class="form-group">
+      <label for="reason">Motif</label>
+      <textarea id="reason" name="reason" rows="4" placeholder="Expliquez brièvement..." required></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="justification-file">Joindre un justificatif (image ou PDF)</label>
+      <input type="file" id="justification-file" name="justif" accept=".jpg,.jpeg,.png,.pdf" required>
+    </div>
+
+    <button type="submit" class="submit-absence-btn">Envoyer la justification</button>
+  </form>
+</section>
+
+
+
+<!--__________________________________Emplois du temps________________________________________________-->
+<!-- SECTION EMPLOI DU TEMPS DES COMPOSITIONS -->
+<section class="exam-schedule-section scroll-fade-in">
+  <h2 class="section-title"><span style="font-family: 'Courier New', Courier, monospace;">Emploi du Temps – Compositions /</span> <span style="font-family:'Playpen Sans Arabic', cursive;">جدول الاختبارات</span> <br><span style="font-family: 'Courier New', Courier, monospace;font-size:1.2rem;"> (EXAMPLE) chaque eleves recevera un emplois du temps par rapport a sa classe</span></h2>
+
+  <div class="exam-table-container">
+    <table class="exam-table">
+      <thead>
+        <tr>
+          <th>Jour</th>
+          <th>08h00 - 10h00</th>
+          <th>10h30 - 12h30</th>
+          <th>14h00 - 16h00</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Dimanche</td>
+          <td>Mathématiques</td>
+          <td>Français</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Lundi</td>
+          <td>Physique</td>
+          <td>Anglais</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Mardi</td>
+          <td>SVT</td>
+          <td>Philosophie</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Mercredi</td>
+          <td>Histoire-Géo</td>
+          <td>Islamique</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Jeudi</td>
+          <td>Arabe</td>
+          <td>Tamazight</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+
+
+
+
+</span>
+
+<!--un boutons pour remonter vers le haut quand en scroll vers le bah----------->
+<button id="backToTopBtn" class="back-to-top" aria-label="Retour en haut">
+    <i class="fas fa-arrow-up"></i>
+</button>
+    <footer class="scroll-fade-in" style="bottom: 0;">
+        <div class="footer-content">
+            <h3>Lycée Sidi Ali Lebhar<br>اسعد احمد و بشير</h3>
+            
+            <!-- Icônes réseaux sociaux -->
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+
+            <!--gps-->
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.934095789811!2d5.0672635999999995!3d36.724143999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12f2cd9f3569da01%3A0x8a7142a258268422!2sLyc%C3%A9e%20Sidi%20Ali%20lebhar!5e0!3m2!1sfr!2sdz!4v1748260699083!5m2!1sfr!2sdz";
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+
+            <p class="copyright">© 2025 Lycée Sidi Ali Lebhar. ممتلك الحقوق.</p>
+        </div>
+    </footer>
+    <div style="display: none;">
+        <input type="text" name="" id="fullname">;
+        <input type="text" name="" id="email">;
+        <input type="text" name="" id="subject">;
+        <input type="text" name="" id="message">;
+    </div>
+
+ <script>
+    alert('Ceci est un example, nous faisons de notre mieux pour créer un profil personel pour chaque éléve et prof et parent .En plus d une messagerie entre parent/prof');
+    alert('هدا ميثال فقط اننا نعمل على انشاء حساب شخصي لكل من التلاميد و الاساتدة والاولياء ');
+ </script>
+<script src="./sidi1.js"></script> 
+</body>
+</html>
