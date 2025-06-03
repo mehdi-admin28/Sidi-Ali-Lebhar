@@ -878,7 +878,7 @@ tr:hover {
 .amazigh-event {
     padding:3rem 5%;
     
-    background: transparent!important;
+    background-color: transparent!important;
     margin: 2rem auto;
     max-width: 1200px;
     border-radius: 8px;
