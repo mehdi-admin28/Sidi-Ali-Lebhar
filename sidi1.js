@@ -158,7 +158,7 @@ function initBackToTopButton() {
         });
     });
 }
-
+/**actualitées*/
 function renderNews() {
     const container = document.getElementById('newsContainer');
     if (!container) return;
