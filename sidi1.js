@@ -289,11 +289,3 @@ message.addEventListener("input",(e)=>{
 
 //----------------------------------------------------------------------------- Initialisation
 document.addEventListener('DOMContentLoaded', initEventListeners);
-/*---------------avec google--------------------------*/
-const btngoogle = document.getElementById('goog');
-btngoogle.addEventListener("click",()=>{
-    signInWidthPopup(auth,provider)
-    .then(alert("c est bon frerooooooo!!!!!!"))
-    .catch(alert("non mais comeme!"));
-    /*pas de point virgule*/
-});
