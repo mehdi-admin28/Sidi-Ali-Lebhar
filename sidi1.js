@@ -1,3 +1,35 @@
+// Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+  import { getAuth } from "firebase/auth";
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyAVcBTgJwhRiUTe4asV41OtZqAPmt27fgU",
+    authDomain: "sidialilebhar-project.firebaseapp.com",
+    projectId: "sidialilebhar-project",
+    storageBucket: "sidialilebhar-project.firebasestorage.app",
+    messagingSenderId: "824231980604",
+    appId: "1:824231980604:web:bb8f38834326acf9149d39"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+
+/*---------------avec google--------------------------*/
+const btngoogle = document.getElementById('goog');
+btngoogle.addEventListener("click",()=>{
+    signInWidthPopup(auth,provider)
+    .then(alert("c est bon frerooooooo!!!!!!"))
+    .catch(alert("non mais comeme!"));
+    /*pas de point virgule*/
+});
+
+/*000000000000000000000000000000000000000000000000000000000000000000000000000000000000000*/
+/*000000000000000000000000000000000000000000000000000000000000000000000000000000000000000*/
+/*000000000000000000000000000000000000000000000000000000000000000000000000000000000000000*/
 // Sélection des éléments DOM
 const elements = {
     dispare: document.querySelector('.dispare'),
