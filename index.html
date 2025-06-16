@@ -520,13 +520,23 @@
   const app = initializeApp(firebaseConfig);
   const auth = getAuth(app);
   /*---------------avec google--------------------------*/
+  const provider = new GoogleAuthProvider(); /*ceci est de la part de l ia*/
 const btngoogle = document.getElementById('goog');
-btngoogle.addEventListener("click",()=>{
-    signInWidthPopup(auth,provider)
-    .then(alert("c est bon frerooooooo!!!!!!"))
-    .catch(alert("non mais comeme!"));
+if(btngoogle){
+    btngoogle.addEventListener("click",()=>{
+    signInWithPopup(auth,provider)
+    .then((a)=>{
+        alert("c est bon frerooooooo!!!!!!")
+    })
+    .catch((b)=>{
+        alert("non mais comeme!")
+    });
     /*pas de point virgule*/
 });
+}
+else{
+    alert("y a pas de btngoogle");
+}
 </script>
 <script src="./sidi1.js"></script>
 </body>
